@@ -1,0 +1,137 @@
+.bloco-aside{
+    height: 100%;
+    /* display: none; */
+}
+.cart-produtos{
+    display: none;
+}
+
+.cart{
+    margin-bottom: 20px
+}
+
+.cart--item{
+    display: flex;
+    align-items:center;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.cart--item img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.cart-item-nome{
+    flex:1;
+}
+
+
+.cart-item-remover {
+    font-size: 17px;
+    padding: 0px 10px;
+    color: #333;
+    background-color: #EEE;
+    border-radius: 5px;
+    height: 30px;
+}
+.cart-item-remover:hover {
+    cursor: pointer;
+}
+
+/*----------------*/
+
+aside{
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    width: 35vw;
+    height: 100%;
+    background-color: #448655;
+    font-family: 'Hepta Slab', Arial, Helvetica, sans-serif;
+    transition: all ease .2s; /* começa lento, rapido, lento */
+    overflow-x: hidden; /* se estourar não aparece no eixo x */
+    display: none;
+}
+
+/* show é uma pseudoclasse que colocamos ela via javascript */
+aside.show{
+    display: block !important;
+}
+
+.cart--area{
+    padding: 20px;
+}
+
+
+.cart--totalitem{
+    padding: 15px 0;
+    border-top: 1px solid #79B9DD;
+    color: #315970;
+    justify-content: space-between;
+    display: flex;
+    font-size: 15px;
+}
+
+.cart--totalitem span:first-child{
+    font-weight: bold;
+    color: white;
+}
+
+.cart--totalitem.big{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.cart--finalizar{
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #48D05F;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    margin-top:20px;
+    border: 2px solid #63f77c;
+    transition: all ease .2s;
+    width: 100%;
+    font-size: 25px;
+}
+
+.cart--finalizar:hover{
+    background-color: #35af4a
+}
+
+.menu-closer{
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+@media (max-width:840px) {
+    aside{
+        width: 400px;
+        position: fixed;
+        left: 100vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all ease .2s;
+    }
+
+    aside.show{
+        width: auto;
+
+    }
+
+    .cart--area{
+        width: 100vw;
+    }
+}

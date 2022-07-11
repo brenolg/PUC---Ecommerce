@@ -1,0 +1,81 @@
+.produtos {
+    margin: 20px;
+}
+
+.titulo-lista {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.lista-produtos {
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.produto {
+    width: 250px;
+    height: 500px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.produto:hover {
+    cursor: pointer;
+}
+.produto:hover .imagem-produto {
+    opacity: 0.85;
+}
+
+.produto .bloco-imagem {
+    width: 200px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.produto .bloco-imagem .imagem-produto {
+    max-width: 200px;
+    max-height: 320px;
+    transition: opacity 0.2s ease-out;
+}
+
+.produto .descricao-produto {
+    font-size: 20px;
+    margin: 10px 0;
+    height: 40px;
+}
+
+.produto .preco-de {
+    font-size: 16px;
+    opacity: 0.8;
+    text-decoration: line-through;
+}
+.produto .preco-de .cifrao {
+    font-size: 12px;
+}
+
+.produto .preco-venda {
+    font-size: 20px;
+    font-weight: 700;
+}
+.produto .preco-venda .cifrao {
+    font-size: 14px;
+}
+
+
+/* João - adicionei para ver como ficaria o botão */
+
+.btn-add-to-cart {
+    width: 100%;
+    padding: 1em;
+    margin-top: 10px;
+    background-color: #284C31;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+}

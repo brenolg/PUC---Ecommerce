@@ -1,0 +1,65 @@
+:root {
+    --head-font-weight: 700;
+
+    --head-font-style: normal;
+
+    --head-color: #282828;
+
+}
+
+.fale-conosco {
+    text-align: center;
+    min-height: 550px;
+}
+
+h1.Tipo {
+    font-size: 60px;
+    margin-bottom: 0;
+    line-height: 1.43;
+    font-weight: var(--head-font-weight);
+    font-style: var(--head-font-style);
+    color: var(--head-color);
+
+}
+
+textarea.fale-conosco {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: var(--head-font-weight);
+    color: var(--head-color);
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.contato {
+    width: 100%;
+    max-width: 500px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botao {
+    margin-bottom: 15px;
+    background-color: lightgray;
+    border: 0px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}

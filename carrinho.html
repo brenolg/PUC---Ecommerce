@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <meta name="description" content="E-commerce de fácil usabilidade, que possibilita a venda de produtos e também seja uma forma de divulgação de empresas do ramo de roupas e acessórios.">
+    <base href="./">
+
+    <script src="https://kit.fontawesome.com/94b713f2cc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link type="text/css" rel="stylesheet" href="src/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="src/css/esqueleto.css">
+    <link type="text/css" rel="stylesheet" href="src/css/header.css">
+    <link type="text/css" rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" type="text/css" href="src/css/carrinho.css">
+    <script type="application/javascript" src="carrinho.js"></script>
+
+    <script type="text/javascript" language="javascript" src="src/services/carrinho.service.js"></script>
+</head>
+
+<body>
+
+    <div class="cart-produtos">
+        <div class="cart--item">
+            <img src="">
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item-tamanho">--</div>
+            <div class="cart--item-cor">--</div>
+            <div class="cart-btn-remover"></div>
+        </div>
+    </div>
+
+    <main>
+
+        <aside>
+            <!-- Área do carrinho -->
+            <div class="cart--area">
+                <!-- Fechar carrinho -->
+                <div class="menu-closer" onclick="escondeCarrinho()">
+                    <span class="material-icons close-button-cart">close</span>
+                </div>
+
+                <!-- O que aparece no carrinho -->
+                <h1>Seus produtos</h1>
+                <div class="cart"></div>
+
+                <!-- Detalhes do carrinho -->
+                <div class="cart--details">
+                    <div class="cart--totalitem subtotal">
+                        <span>Subtotal</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--totalitem desconto">
+                        <span>Desconto(-10%)</span>
+                        <span>R$--</span>
+                    </div>
+                    <div class="cart--totalitem total big">
+                        <span>Total</span>
+                        <span>R$--</span>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5521988177200&text=Preciso%20de%20ajuda%20no%20site"><button class="cart--finalizar">Finalizar a compra</button></a>
+                    <!--  <div class="cart--finalizar">Finalizar a compra</div> -->
+
+                </div>
+            </div>
+        </aside>
+        <!-- <div class="bloco-aside">
+        </div> -->
+
+    </main>
+
+</body>
+</html>

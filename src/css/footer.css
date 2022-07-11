@@ -1,0 +1,309 @@
+/* --------------- FOOTER ---------------*/
+.botao-whatsapp {
+    position: fixed;
+    z-index: 10;
+    color: #FFFFFF;
+    right: 10px;
+    top: 82%;
+    font-size: 50px;
+    background-color: #4DC247;
+    border-radius: 50%;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px #4d4d4d3f;
+}
+
+.rodape {
+    height: 320px;
+    background-color: #284C31;
+    color: white;
+    clear: both;
+}
+
+/* BLOCO CADASTRE E RECEBA OFERTA */
+.bloco-cadastre-ofertas {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    place-content: space-around;
+    border-bottom: 1px solid white;
+}
+
+.titulo-cadastre-ofertas h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.titulo-cadastre-ofertas h4 {
+    font-size: 16px;
+}
+
+.form-cadastre-ofertas .input-nome-cadastre-ofertas, .form-cadastre-ofertas .input-email-cadastre-ofertas {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 220px;
+}
+.form-cadastre-ofertas input:first-child {
+    margin-right: 30px;
+}
+.form-cadastre-ofertas input:focus {
+    outline: none;
+}
+
+.btn-cadastre-ofertas {
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #2F4F4F;
+    border: 1px solid white;
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+.btn-cadastre-ofertas:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.btn-cadastre-ofertas i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+/* Fale Conosco */
+:root{
+    --head-font-weight: 700;
+   
+    --head-font-style: normal;
+   
+    --head-color: #282828;
+    
+}
+
+.fale-conosco{
+    text-align: center;
+    
+    
+}
+h1.Tipo{
+    font-size: 60px;
+    margin-bottom: 0;
+    line-height: 1.43;
+    font-weight: var(--head-font-weight);
+    font-style: var(--head-font-style);
+    color: var(--head-color);
+    
+}
+.subtitulo {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: var(--head-font-weight);
+    color: var(--head-color);
+    margin-bottom: 10px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contato {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  .botao {
+    margin-bottom: 15px;
+    background-color: lightgray;
+    border: 0px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+/* RODAPE BRENO */
+
+
+.paiInferiorFooter{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 16px;
+    width: 100%; 
+    border-bottom: 1px solid white;
+    align-items: center;
+    align-items: stretch;
+    
+}
+
+.textosFooter {
+    margin-top: 2vh;
+}
+ 
+
+.institucionalFooter{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    font-size: 16px;
+    
+}
+
+
+.contatosFooter{
+    display: flex;
+    justify-items: center;
+    margin-right: 78px;
+    flex-direction: column;
+}
+
+
+.logoFooter{
+    display: flex;
+    font-size: 16px;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+.paiIconesCartão{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.tituloFooterInferior{
+    font-size: 22px;
+}
+
+.botaoFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;  
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:active {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    background-color: #284C31;
+    text-align: center;
+    padding: 3px;
+}
+
+@media (max-width: 1000px) {
+    footer {
+        min-height: 71vh;
+       
+     }
+     .logoFooter{
+        display: none;
+
+    }
+
+
+    .bloco-cadastre-ofertas {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2vh;
+        justify-content: center;
+        flex-wrap: wrap;  
+    }
+
+
+    .form-cadastre-ofertas {
+        margin-bottom: 3vh;
+        margin-top: 3vh;  
+        flex-direction: column;  
+        display: flex;
+        padding: 0%;
+    }
+
+
+    .bloco-cadastre-ofertas input {
+        margin-bottom: 1vh;
+        margin-top: 1vh; 
+        
+              
+    }
+    #nome-cadastre-ofertas {
+        margin-right: 0%;
+    }
+
+
+   .paiInferiorFooter {
+       flex-direction: column;
+       padding: 0%;
+   }
+
+
+   .logoFooter {
+       display: none;
+   }
+
+
+   .mapafooter {
+       display: none;
+   }
+
+
+   .formasDePagamentoFooter {
+       display: none;
+   }
+
+
+   .institucionalFooter {
+       text-align: center;
+       border-bottom: 1px solid white;
+       padding-bottom: 2vh;
+   }
+
+
+   .contatosFooter {
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    margin: 0; 
+   }
+
+
+   .copy {
+       flex-wrap: wrap;
+   }
+ 
+}
+
+

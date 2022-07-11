@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <meta name="description" content="E-commerce de fácil usabilidade, que possibilita a venda de produtos e também seja uma forma de divulgação de empresas do ramo de roupas e acessórios.">
+    <base href="./">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(event => {
+            $("#carrinho").load("carrinho.html");
+        })
+    </script>
+
+    <script type="text/javascript" src="header.js"></script>
+    <script type="text/javascript" language="javascript" src="src/services/carrinho.service.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="nav-bar">
+
+            <div class="logo">
+                <a href="index.html"> <img src="src/assets/logo-header.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="index.html?blusas=true">Blusas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html?calcas=true">Calças</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html?acessorios=true">Acessórios</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-search">
+                <form>
+                    <input type="text" name="" id="nav-search-field" placeholder="O que você procura?" autocomplete="off">
+                    <button aria-label="botão de pesquisa" for="nav-search-field" type="submit" class=" nav-search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="nav-icons">
+                <a class="nav-icons-link" href="cadastro.html" title="Login/Cadastrar" aria-label="Login/Cadastrar"><i class="fa-solid fa-user"></i></a>
+                <div id="open-cart" class="nav-icons-link">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="quantidade-produto-header">0</span>
+                </div>
+
+            </div>
+
+            <!-- Verificar esse bug/ GAMBIARRA ON /era par o evento funcionar no botão e não na div -->
+            <div class="mobile-menu-icon" onclick="openMenu()">
+                <button class="btn-mobile-menu"><img class="icon" src="src/assets/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+        </nav>
+
+        <div class="nav-search-mobile">
+            <form>
+
+                <label for="nav-search-field-mobile"><i class="icon-search-mobile fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" name="" id="nav-search-field-mobile" placeholder="O que você procura?" autocomplete="off">
+
+
+
+            </form>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="index.html?blusas=true">Blusas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html?calcas=true">Calças</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html?acessorios=true">Acessórios</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <div id="carrinho"></div>
+</body>
