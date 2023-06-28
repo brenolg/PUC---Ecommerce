@@ -24,9 +24,12 @@ E-commerce de fácil usabilidade, que possibilita a venda de produtos e também 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
-Link da aplicação: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t9-e1projetot9grupo1ecommerce/
+Link da aplicação: 
+<a	href=https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t9-e1projetot9grupo1ecommerce/
+	target="_blank"
+	rel="noopener noreferrer"> PUC-Ecommerce
+<a/>
 <img width="100%" src="puc.gif" />
 
 
